@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>THOR html</title>
+    <style>
+    *{padding: 0;  margin: 0; -webkit-box-sizing: border-box; box-sizing: border-box;}
+    body{
+      font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+      font-size: 16px;
+      color: white;
+      min-height: 100vh;
+      height: auto;
+      background-color: #181B1E;
+      overflow-x: hidden;
+    }
+    .container{
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: stretch;
+      -webkit-align-items: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch;
+      min-height: 400px;
+      height: 100vh;
+    }
+    a{color: inherit; text-decoration: none;}
+    h1{
+      margin: 5vh 3vw 0 3vw;
+      padding-bottom: 1vh;
+      color: white;
+      display: block;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .ico{
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      content: ' ';
+      font-style: normal;
+    }
+    .links{
+       background-color: white;
+       border-radius: 10px;
+       margin: 5vh 3vw;
+       padding: 5vh 3vw;
+       width: 45vw;
+       float: left;
+       color: rgba(0,0,0,.7);
+      }
+    .flex{
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+    .flexCenter{
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+    }
+    .content{
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+    }
+    .flexEnd{
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;;
+    }
+    ul{list-style: decimal-leading-zero;;}
+    ul li{
+      margin-left: 3vw;
+      color: #838B90;
+    }
+    ul li a{
+      display: block;
+      padding: 1.3vh 0vw 1.3vh 1vw;
+      width: 100%;
+      color: #181B1E;
+      border-left: 4px solid transparent;
+      border-bottom: 1px solid rgba(0,0,0,.2);
+      -webkit-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+    }
+    ul li a span{
+      opacity: .5;
+      margin-left: .5em;
+      float: right;
+    }
+    ul li a:hover{
+      border-left: 4px solid #F53B49;
+      /*background: rgba(0,0,0,.1);*/
+      color: #F53B49;
+      border-bottom: 1px solid rgba(0,0,0,.4);
+    }
+    h2{
+      margin-bottom: 3vh;
+    }
+    .footer{
+      margin: 5vh 3vw 3vh 3vw;
+      border-top: 1px dotted rgba(255,255,255,.25);
+      padding-top: 2vh;
+      font-size: 0.825em;
+      color: #838B90;
+    }
+    .footer a{
+      color: white;
+    }
+    @media(max-width: 700px){
+      h1{
+        font-size: 1.75em;
+      }
+      .container{
+        display: block;
+      }
+      .flexWrap{
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+      }
+      .links{
+        width: 94vw;
+      }
+      ul li {
+        margin-left: 10vw;
+      }
+    }
+    </style>
+  </head>
+<body>
+  <div class="container">
+    <div class="fix">
+      <div class="flex flexCenter">
+      <h1>THOR HTML/CSS Layout</h1>
+      <i class="ico ico-logo--white"></i>
+    </div>
+    </div>
+    <div class="content">
+      <div class="flex flexWrap">
+        <div class="links">
+          <h2>THOR</h2>
+          <ul class="">
+            <li><a href="mainpage.html" target="_blank">Главная</a></li>
+            <li><a href="drake.html" target="_blank">Drake (ленд)</a></li>
+            <li><a href="thor.html" target="_blank">Тор (ленд)</a></li>
+            <li><a href="turntable.html" target="_blank">Поворотный стол (ленд)</a></li>
+            <li><a href="soft.html" target="_blank">3D Suite (ленд)</a></li>
+            <li><a href="photo-gallery.html" target="_blank">Фото галлерия</a></li>
+            <li><a href="video-gallery.html" target="_blank">Видео галлерея</a></li>
+
+
+            <li><a href="faq.html" target="_blank">FAQ</a></li>
+            <li><a href="about.html" target="_blank">Компания</a></li>
+            <li><a href="buy.html" target="_blank">Купить</a></li>
+          </ul>
+        </div>
+        <div class="links">
+          <h2>THOR</h2>
+          <ul class="">
+            <li><a href="arts.html" target="_blank">Статьи</a></li>
+            <li><a href="arts-list.html" target="_blank">Статьи (по категориями)</a></li>
+            <li><a href="arts-item.html" target="_blank">Одна статья</a></li>
+            <li><a href="news.html" target="_blank">Все новости</a></li>
+            <li><a href="news-item.html" target="_blank">Одна новость</a></li>
+            <li><a href="404.html" target="_blank">404</a></li>
+            <li><a href="blog.html" target="_blank">Блог</a></li>
+            <li><a href="events.html" target="_blank">События</a></li>
+
+
+            <li><a href="3d-gallery.html" target="_blank">3D галлерея</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="fix">
+      <div class="flex flexEnd">
+
+    </div>
+    </div>
+
+  </div>
+</body>
+</html>
