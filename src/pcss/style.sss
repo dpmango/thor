@@ -1,0 +1,1353 @@
+@font-face
+  font-family: 'Clear Sans'
+  src: local("Clear Sans Thin"), local("ClearSans-Thin"), url('../fonts/clearsansthin.woff2') format("woff2"), url('../fonts/clearsansthin.woff') format("woff"), url('../fonts/clearsansthin.ttf') format("truetype")
+  font-weight: 200
+  font-style: normal
+
+
+@font-face
+  font-family: 'Clear Sans'
+  src: local("Clear Sans Light"), local("ClearSans-Light"), url('../fonts/clearsanslight.woff2') format("woff2"), url('../fonts/clearsanslight.woff') format("woff"), url('../fonts/clearsanslight.ttf') format("truetype")
+  font-weight: 300
+  font-style: normal
+
+
+@font-face
+  font-family: 'Clear Sans'
+  src: local("Clear Sans"), local("ClearSans"), url('../fonts/clearsans.woff2') format("woff2"), url('../fonts/clearsans.woff') format("woff"), url('../fonts/clearsans.ttf') format("truetype")
+  font-weight: 400
+  font-style: normal
+
+
+@font-face
+  font-family: 'Clear Sans'
+  src: local("Clear Sans Italic"), local("ClearSans-Italic"), url('../fonts/clearsansitalic.woff2') format("woff2"), url('../fonts/clearsansitalic.woff') format("woff"), url('../fonts/clearsansitalic.ttf') format("truetype")
+  font-weight: 400
+  font-style: italic
+
+
+@font-face
+  font-family: 'Clear Sans'
+  src: local("Clear Sans Medium"), local("ClearSans-Medium"), url('../fonts/clearsansmedium.woff2') format("woff2"), url('../fonts/clearsansmedium.woff') format("woff"), url('../fonts/clearsansmedium.ttf') format("truetype")
+  font-weight: 500
+  font-style: normal
+
+
+@font-face
+  font-family: 'Clear Sans'
+  src: local("Clear Sans Medium Italic"), local("ClearSans-MediumItalic"), url('../fonts/clearsansmediumitalic.woff2') format("woff2"), url('../fonts/clearsansmediumitalic.woff') format("woff"), url('../fonts/clearsansmediumitalic.ttf') format("truetype")
+  font-weight: 500
+  font-style: italic
+
+
+@font-face
+  font-family: 'Clear Sans'
+  src: local("Clear Sans Bold"), local("ClearSans-Bold"), url('../fonts/clearsansbold.woff2') format("woff2"), url('../fonts/clearsansbold.woff') format("woff"), url('../fonts/clearsansbold.ttf') format("truetype")
+  font-weight: 700
+  font-style: normal
+
+
+@font-face
+  font-family: 'Clear Sans'
+  src: local("Clear Sans Bold Italic"), local("ClearSans-BoldItalic"), url('../fonts/clearsansbolditalic.woff2') format("woff2"), url('../fonts/clearsansbolditalic.woff') format("woff"), url('../fonts/clearsansbolditalic.ttf') format("truetype")
+  font-weight: 700
+  font-style: italic
+
+
+.up
+  text-transform: uppercase
+
+.none
+  text-decoration: none
+
+.bold
+  font-weight: bold
+
+.un
+  text-decoration: underline
+
+.in
+  display: inline-block
+
+.vam
+  vertical-align: middle
+
+.rel
+  position: relative
+
+.bl
+  display: block
+
+.abs
+  position: absolute
+
+body, html
+  width: 100%
+  height: 100%
+
+body
+  background: #fff
+  overflow-x: hidden
+  &.dark
+    background: #ebebeb
+  font-family: 'Clear Sans'
+  font-size: 14px
+  color: #333333
+
+th, td
+  font-family: 'Clear Sans'
+  font-size: 14px
+  color: #333333
+
+body, form, object, h1, h2, h3, h4, h5, h6, p
+  margin: 0
+  padding: 0
+
+img
+  border: none
+
+table
+  border: none
+  border-collapse: collapse
+  td
+    padding: 0
+
+a
+  color: #333333
+  &:hover
+    text-decoration: none
+    -webkit-transition: all 800ms ease
+    -moz-transition: all 800ms ease
+    -ms-transition: all 800ms ease
+    -o-transition: all 800ms ease
+    transition: all 800ms ease
+
+input, textarea, button, select
+  margin: 0
+  outline: none
+  font-family: 'Clear Sans'
+
+button:hover
+  -webkit-transition: all 800ms ease
+  -moz-transition: all 800ms ease
+  -ms-transition: all 800ms ease
+  -o-transition: all 800ms ease
+  transition: all 800ms ease
+
+section, header, footer, nav, main
+  display: block
+
+.container
+  max-width: 1200px
+  width: 100%
+
+.clear
+  clear: both
+
+.top-line
+  background: #ebebeb
+  height: 46px
+  line-height: 46px
+  text-align: right
+  button
+    border: 0
+    background: none
+    box-shadow: none !important
+  .social
+    margin-right: 50px
+    display: inline-block
+    img
+      margin: 0 8px
+
+.header
+  background: #323232
+  .menu-button
+    display: none
+  .logo
+    float: left
+    padding: 15px 0
+  .top-menu
+    float: right
+    ul
+      padding: 0
+      margin: 0
+      list-style: none
+      li
+        display: inline-block
+        position: relative
+        &:hover ul
+          display: block
+        a
+          display: block
+          font-size: 15px
+          font-weight: bold
+          text-transform: uppercase
+          color: #fff
+          padding: 22px 16px
+          &.active, &:hover
+            color: #f6871f
+        ul
+          position: absolute
+          left: 0
+          z-index: 2
+          width: 272px
+          background: #505050
+          padding: 8px 0
+          display: none
+          li
+            display: block
+            a
+              padding: 5px 16px
+
+.index-page-slider
+  position: relative
+  .item
+    height: 664px
+    .content
+      width: 500px
+    .zag
+      font-weight: bold
+      font-size: 80px
+      padding-top: 80px
+      text-align: left
+    p
+      font-weight: 300
+      font-size: 26px
+    .btn
+      margin-top: 30px
+  .slick-dots
+    position: absolute
+    width: 100%
+    text-align: center
+    padding: 0
+    margin: 0
+    list-style: none
+    bottom: 30px
+    li
+      display: inline-block
+      &.slick-active button
+        background: #464547
+      button
+        border: 1px solid #464547
+        padding: 0
+        font-size: 0
+        cursor: pointer
+        z-index: 2
+        width: 13px
+        height: 13px
+        border-radius: 50%
+        margin: 0 4px
+        background: none
+
+.btn
+  font-size: 26px
+  color: #fff
+  border: 0
+  cursor: pointer
+  background: #f6871f
+  font-weight: 300
+  width: 202px
+  height: 52px
+  padding: 0
+  line-height: 52px
+  border-radius: 0
+
+.index-page-icons
+  padding: 60px 0
+  text-align: center
+  .zag
+    font-weight: 300
+    font-size: 40px
+    padding-bottom: 80px
+    &.small
+      font-size: 36px
+      padding-bottom: 40px
+    span
+      font-weight: bold
+    p
+      padding-bottom: 40px
+  .item
+    font-weight: 300
+    font-size: 18px
+    line-height: 30px
+    margin-bottom: 40px
+    img
+      margin-bottom: 40px
+      max-width: 100%
+    span
+      display: block
+      font-weight: bold
+      margin-bottom: 10px
+      text-transform: uppercase
+  .bottom-text
+    text-align: center
+    font-size: 26px
+    font-weight: 300
+    padding: 50px 0
+
+.index-page-items
+  background: #ebebeb
+  padding: 80px 0
+  text-align: center
+  position: relative
+  &:after
+    content: ""
+    position: absolute
+    width: 50%
+    height: 100%
+    right: 0
+    top: 0
+    background: #323232
+  .container
+    position: relative
+    z-index: 2
+  img
+    max-width: 100%
+  .name
+    font-size: 80px
+    font-weight: 300
+  p
+    font-weight: 300
+    font-size: 23px
+    margin-bottom: 30px
+  .dark
+    color: #fff
+
+.zag
+  font-weight: 300
+  font-size: 40px
+  padding-bottom: 60px
+  text-align: center
+  span
+    font-weight: bold
+
+.index-page-free
+  padding: 80px 0
+  .item
+    text-align: center
+    font-size: 16px
+    text-transform: uppercase
+    font-weight: 300
+    margin-bottom: 30px
+    img
+      margin-bottom: 10px
+      max-width: 100%
+
+.index-page-catalog
+  background: #323232
+  padding: 80px 0 0
+  color: #fff
+  .row
+    margin-bottom: 100px
+  img
+    max-width: 100%
+    margin-top: 40px
+  .name
+    font-weight: bold
+    font-size: 80px
+    margin-bottom: 20px
+  p
+    font-weight: 300
+    font-size: 36px
+    margin-bottom: 30px
+  a
+    font-size: 26px
+    color: #f6871f
+  .btn
+    margin-top: 40px
+  .f_right
+    float: right
+  .f_left
+    float: left
+
+.index-posts
+  padding: 80px 0
+
+.post-item
+  margin-bottom: 40px
+  line-height: 28px
+  img
+    width: 100%
+    margin-top: 8px
+  .name
+    display: block
+    font-size: 15px
+    font-weight: bold
+    text-transform: uppercase
+    margin-bottom: 5px
+  .date
+    font-style: italic
+    margin-bottom: 5px
+
+.footer
+  padding: 80px 0
+  background: #323232
+  color: #fff
+  .logo
+    float: left
+    p
+      margin-top: 40px
+      line-height: 30px
+    .social
+      padding-top: 50px
+      img
+        margin-right: 18px
+      a:last-child img
+        margin-right: 0
+  .big-text
+    font-size: 18px
+    text-transform: uppercase
+    margin-bottom: 30px
+  .bottom-menu
+    float: left
+    margin-left: 200px
+    ul
+      padding: 0
+      margin: 0
+      list-style: none
+      li
+        margin-bottom: 14px
+        a
+          font-size: 12px
+          color: #fff
+          text-transform: uppercase
+          &:before
+            content: ">"
+            color: #f6871f
+            margin-right: 6px
+  .subscribe
+    float: right
+    p
+      color: #b9b9b9
+      line-height: 30px
+      margin-bottom: 15px
+    form input
+      &[type='text']
+        width: 370px
+        height: 50px
+        border: 1px solid #505050
+        padding: 0 0 0 15px
+        margin-bottom: 20px
+        font-size: 13px
+        background: none
+        &:focus
+          border: 1px solid #f6871f
+      &[type='submit']
+        border: 0
+        cursor: pointer
+        font-size: 13px
+        font-weight: bold
+        text-transform: uppercase
+        width: 370px
+        height: 50px
+        background: #f6871f
+        text-align: left
+        padding-left: 13px
+
+.copy
+  background: #000
+  text-align: center
+  color: #fff
+  font-size: 18px
+  padding: 20px 0
+
+.popupbg
+  position: fixed
+  width: 120%
+  height: 100%
+  left: -10%
+  top: 0
+  overflow-y: scroll
+  z-index: 10
+  display: none
+  .bg
+    z-index: 11
+    position: fixed
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    background: rgba(1, 1, 1, 0.7)
+  .popup
+    width: 370px
+    padding: 25px
+    background: #ebebeb
+    position: absolute
+    left: 50%
+    margin-left: -185px
+    top: 100px
+    margin-bottom: 100px
+    z-index: 12
+    .big-text
+      font-size: 18px
+      font-weight: bold
+      text-transform: uppercase
+      margin-bottom: 15px
+    form
+      input[type='text']
+        width: 100%
+        height: 56px
+        border: 0
+        padding: 0 0 0 25px
+        margin-bottom: 20px
+        border: 1px solid #fff
+        &:focus
+          border: 1px solid #f6871f
+      .submit
+        text-align: center
+        input[type='submit']
+          font-size: 14px
+          font-weight: bold
+          width: 180px
+          height: 56px
+
+.page-content
+  padding: 80px 0
+  &.border_t
+    border-top: 1px solid #787878
+
+.error-page
+  text-align: center
+  padding: 120px 0
+  font-weight: bold
+  font-size: 24px
+  span
+    display: block
+    font-size: 80px
+    margin-bottom: 10px
+    letter-spacing: 4px
+  .btn
+    font-size: 28px
+    width: 375px
+    margin-top: 30px
+
+h1
+  font-size: 63px
+  font-weight: bold
+  margin-bottom: 40px
+  &.small
+    font-size: 44px
+
+h2
+  font-size: 42px
+  font-weight: bold
+  margin-bottom: 40px
+
+.about-top-text
+  padding: 80px 0
+  background: #ebebeb
+  .zag
+    font-size: 49px
+    padding-bottom: 40px
+
+.big-two-cols-text
+  font-weight: 300
+  font-size: 17px
+  line-height: 28px
+  a
+    text-decoration: underline
+    &:hover
+      text-decoration: none
+
+.buy-info .item
+  margin-bottom: 30px
+  font-size: 17px
+  font-weight: 300
+  line-height: 28px
+  span
+    display: block
+    font-weight: bold
+    text-transform: uppercase
+  a
+    text-decoration: underline
+    &:hover
+      text-decoration: none
+
+.product-top-info
+  background: #ebebeb
+  padding: 60px 0
+  &.no_top_m
+    padding-top: 0
+    img
+      margin-top: 0
+  &.small p
+    font-size: 17px
+    padding-top: 80px
+    line-height: 30px
+  .photo
+    text-align: center
+  img
+    max-width: 100%
+    margin-top: 30px
+  .name
+    font-weight: bold
+    font-size: 63px
+    margin-bottom: 30px
+    padding-top: 40px
+  p
+    font-weight: 300
+    font-size: 26px
+    margin-bottom: 30px
+    padding-right: 20px
+
+.product-video
+  background: #323232
+  iframe
+    height: 430px
+  .text
+    font-weight: 300
+    font-size: 17px
+    padding: 20px 10px
+    color: #fff
+    line-height: 34px
+
+.scanner
+  background: #ebebeb
+  padding: 80px 0
+  .zag
+    font-size: 55px
+    font-weight: bold
+  .item
+    margin-bottom: 30px
+    text-align: center
+    font-weight: 300
+    font-size: 18px
+    line-height: 30px
+    img
+      margin-bottom: 50px
+      max-width: 100%
+    span
+      display: block
+      font-weight: bold
+      text-transform: uppercase
+      text-align: center
+      margin-bottom: 15px
+
+.portative
+  &.big
+    padding: 40px 0
+  .photo
+    text-align: right
+    img
+      max-width: 100%
+  .text
+    padding-top: 80px
+    .big-text
+      font-size: 55px
+      font-weight: bold
+      margin-bottom: 30px
+    p
+      font-size: 17px
+      line-height: 35px
+      font-weight: 300
+      margin-bottom: 30px
+
+.hard-scanning
+  background: #323232
+  color: #fff
+  padding: 80px 0
+  position: relative
+  &.second:before
+    background: url('../img/hard-scanning2.jpg') center
+    background-size: cover
+  &.third:before
+    background: url('../img/hard-scanning3.jpg') center
+    background-size: cover
+  &:before
+    content: ""
+    position: absolute
+    width: 50%
+    height: 100%
+    left: 0
+    top: 0
+    background: url('../img/hard-scanning.jpg') center
+    background-size: cover
+  .big-text
+    font-size: 49px
+    font-weight: bold
+    margin-bottom: 30px
+  p
+    font-size: 17px
+    line-height: 35px
+    font-weight: 300
+    margin-bottom: 30px
+    a
+      color: #f6871f
+      text-decoration: underline
+
+.yesy-use
+  background: #323232
+  padding: 80px 0 60px
+  color: #fff
+  .zag
+    font-size: 49px
+    padding-bottom: 30px
+  p
+    font-size: 17px
+    line-height: 30px
+    font-weight: 300
+    margin-bottom: 20px
+
+.modes
+  padding: 80px 0
+  .zag
+    font-size: 55px
+    font-weight: bold
+  .item
+    margin-bottom: 30px
+    text-align: center
+    img
+      max-width: 100%
+      margin-bottom: 50px
+    .name
+      font-weight: bold
+      text-transform: uppercase
+      font-size: 17px
+      margin-bottom: 5px
+    p
+      font-size: 17px
+      line-height: 30px
+      font-weight: 300
+      text-align: left
+
+.test-markers
+  background: #ebebeb
+  padding: 80px 0
+  position: relative
+  &:before
+    content: ""
+    position: absolute
+    width: 50%
+    height: 100%
+    left: 0
+    top: 0
+    background: url('../img/test-markers.jpg') center
+    background-size: cover
+  .big-text
+    font-size: 55px
+    font-weight: bold
+    margin-bottom: 30px
+  p
+    font-size: 17px
+    line-height: 35px
+    font-weight: 300
+    margin-bottom: 30px
+
+.tech-info
+  padding: 80px 0
+  .zag
+    font-size: 49px
+  table
+    width: 100%
+    thead tr td
+      font-weight: bold
+      font-size: 17px
+      padding: 5px 10px
+    tbody tr
+      &:nth-child(odd)
+        background: #ebebeb
+      td
+        padding: 5px 10px
+        font-size: 17px
+        &[colspan='3']
+          text-align: center
+
+.faq-item
+  margin-bottom: 20px
+  .name
+    cursor: pointer
+    font-size: 18px
+    font-weight: bold
+    text-transform: uppercase
+    padding: 20px 20px 20px 60px
+    border: 1px solid #dddddd
+    background: url('../img/faq.png') no-repeat 20px 50%
+    &.active
+      background: url('../img/faq-active.png') no-repeat 20px 50%
+  .text
+    font-size: 18px
+    font-weight: 300
+    padding: 20px 30px 50px 25px
+    border: 1px solid #dddddd
+    border-top: 0
+    display: none
+
+.gallery-3d .item
+  margin-bottom: 50px
+  text-align: center
+  font-size: 18px
+  line-height: 30px
+  font-weight: 300
+  img
+    max-width: 100%
+  .name
+    font-weight: bold
+    margin-top: 15px
+  iframe
+    height: 320px
+
+.gallery-photo .gallery-item
+  margin-bottom: 50px
+  .item
+    background: #fff
+    text-align: center
+  img
+    width: 90%
+    display: inline
+  .slider-nav, .slider-nav2, .slider-nav3, .slider-nav4
+    padding-top: 20px
+  .slider-nav .item, .slider-nav2 .item, .slider-nav3 .item, .slider-nav4 .item
+    margin: 0 10px
+    opacity: .7
+    outline: none
+    cursor: pointer
+  .slider-nav .item.slick-current, .slider-nav2 .item.slick-current, .slider-nav3 .item.slick-current, .slider-nav4 .item.slick-current
+    opacity: 1
+  .name
+    font-size: 18px
+    text-align: center
+    padding-top: 30px
+
+.blog-item
+  margin-bottom: 50px
+  line-height: 30px
+  font-size: 17px
+  img
+    width: 100%
+    margin-bottom: 10px
+  .date
+    font-size: 10px
+    text-transform: uppercase
+    font-style: italic
+    text-decoration: underline
+    span
+      font-weight: bold
+  .orange-date span
+    font-size: 17px
+    font-weight: bold
+    text-transform: uppercase
+    background: #f6871f
+    padding: 0 8px
+  .name
+    display: block
+    font-weight: bold
+    text-transform: uppercase
+    text-decoration: none
+  a
+    font-style: italic
+    text-decoration: underline
+    &:hover
+      text-decoration: none
+
+.news-item
+  margin-bottom: 50px
+  line-height: 30px
+  font-size: 17px
+  &.arts
+    img
+      max-width: 100%
+      width: auto
+    .btn
+      background: #f6871f
+      &:hover
+        background: #3b3e43
+  img
+    width: 100%
+    margin-bottom: 10px
+  .date
+    font-size: 10px
+    text-transform: uppercase
+    color: #f6871f
+    letter-spacing: 2px
+  .name
+    display: block
+    font-weight: bold
+    text-transform: uppercase
+    text-decoration: none
+  .btn
+    width: 138px
+    height: 40px
+    font-size: 12px
+    margin-top: 20px
+    letter-spacing: 2px
+    line-height: 40px
+    background: #3b3e43
+    &:hover
+      background: #f6871f
+      color: #fff
+
+.news-share
+  margin-bottom: 20px
+  .date
+    font-size: 17px
+    font-weight: bold
+    font-style: italic
+    margin-left: 20px
+    vertical-align: middle
+  .ya-share2
+    display: inline-block
+    vertical-align: middle
+
+.news-page
+  .image
+    margin-bottom: 30px
+    font-size: 15px
+    font-style: italic
+    line-height: 24px
+    img
+      float: left
+      margin-right: 30px
+      max-width: 60%
+  p
+    font-size: 17px
+    margin-bottom: 30px
+    line-height: 28px
+
+.soft-info
+  background: #323232
+  padding: 80px 0
+  color: #fff
+  &.big
+    .big-text
+      font-size: 55px
+    p
+      font-size: 26px
+      font-weight: 300
+      line-height: 44px
+      margin-bottom: 20px
+  .big-text
+    font-size: 49px
+    font-weight: bold
+    margin-bottom: 30px
+    &.center
+      text-align: center
+  p
+    font-size: 17px
+    line-height: 28px
+    span
+      font-weight: bold
+      color: #f6871f
+  .row
+    margin-top: 50px
+  .image
+    text-align: center
+    img
+      max-width: 100%
+  .soft-slider
+    padding-top: 150px
+    text-align: center
+    position: relative
+    img
+      display: inline
+      max-width: 100%
+  .slick-dots
+    width: 100%
+    text-align: center
+    padding: 15px 0 0 0
+    margin: 0
+    list-style: none
+    li
+      display: inline-block
+      &.slick-active button
+        background: #fff
+      button
+        border: 1px solid #fff
+        padding: 0
+        font-size: 0
+        cursor: pointer
+        z-index: 2
+        width: 13px
+        height: 13px
+        border-radius: 50%
+        margin: 0 4px
+        background: none
+
+.thor-icons
+  padding: 80px 0
+  .big-text
+    text-align: center
+    margin-bottom: 50px
+    font-size: 49px
+    font-weight: 300
+    span
+      display: block
+      font-weight: bold
+  .list .item
+    float: left
+    width: 20%
+    text-align: center
+    margin-bottom: 30px
+    img
+      max-width: 100%
+  .bottom-text
+    text-align: center
+    font-size: 26px
+    font-weight: 300
+    padding: 50px 0
+
+.thor-modes
+  padding: 80px 0 0
+  background: #ebebeb
+  .big-text
+    text-align: center
+    margin-bottom: 50px
+    font-size: 49px
+    font-weight: bold
+  .row
+    margin-bottom: 80px
+    p
+      font-size: 17px
+      line-height: 28px
+    .image
+      font-size: 15px
+      line-height: 25px
+      font-style: italic
+      img
+        width: 100%
+        margin-bottom: 10px
+
+.dark-icons
+  padding: 80px 0 50px
+  background: #323232
+  color: #fff
+  text-align: center
+  .item
+    margin-bottom: 30px
+    font-size: 17px
+    line-height: 28px
+    img
+      margin-bottom: 20px
+    a
+      color: #f6871f
+      text-decoration: underline
+
+.tech-table
+  padding: 80px 0
+  .big-text
+    font-size: 55px
+    font-weight: bold
+    text-align: center
+    margin-bottom: 30px
+  .table
+    width: 800px
+    margin: 0 auto
+    table
+      width: 100%
+      tr td
+        padding: 5px 10px
+        font-weight: 300
+        font-size: 26px
+        vertical-align: top
+
+.arts-list .item
+  padding: 50px 0 30px
+  &:nth-child(2n-1)
+    background: #ebebeb
+  .big-text
+    font-size: 63px
+    font-weight: bold
+    margin-bottom: 50px
+
+@media (max-width: 1200px)
+  .header .top-menu ul li a
+    padding: 22px 12px
+  .footer .bottom-menu
+    margin-left: 100px
+  .gallery-3d .item iframe
+    height: 260px
+
+@media (max-width: 991px)
+  .header .top-menu ul li a
+    padding: 22px 7px
+    font-size: 13px
+    text-transform: none
+  .index-page-catalog
+    .image
+      text-align: center
+    .f_right, .f_left
+      float: none
+  .footer
+    .bottom-menu
+      margin-left: 80px
+    .subscribe
+      width: 220px
+      form input
+        &[type='text'], &[type='submit']
+          width: 100%
+  .product-top-info .photo
+    text-align: center
+  .portative
+    .photo
+      display: none
+    .text
+      padding-top: 30px
+  .hard-scanning:before, .test-markers:before
+    display: none
+  .gallery-3d .item iframe
+    height: 200px
+  .no_tablet
+    display: none
+  .soft-info .soft-slider, .product-top-info.small p, .thor-modes .row .image
+    padding-top: 30px
+  .tech-table .table
+    width: auto
+
+@media (max-width: 767px)
+  .header
+    position: relative
+    .logo
+      float: none
+      text-align: center
+    .top-menu
+      position: fixed
+      width: 280px
+      height: 100%
+      background: #fff
+      left: -300px
+      top: 0
+      text-align: left
+      padding-top: 10px
+      z-index: 12
+      -webkit-transition: all 800ms ease
+      -moz-transition: all 800ms ease
+      -ms-transition: all 800ms ease
+      -o-transition: all 800ms ease
+      transition: all 800ms ease
+      &.opened
+        left: 0
+      ul li
+        display: block
+        a
+          color: #333
+          padding: 5px 15px
+        ul
+          position: relative
+          width: auto
+          display: block
+          background: none
+          padding: 0 0 0 20px
+  .menubg
+    position: fixed
+    width: 100%
+    height: 100%
+    display: none
+    left: 0
+    top: 0
+    background: rgba(1, 1, 1, 0.6)
+    z-index: 11
+  .header .menu-button
+    display: block
+    position: absolute
+    top: 16px
+    left: 20px
+    color: #fff
+    font-size: 24px
+    cursor: pointer
+    font-weight: bold
+  .index-page-slider .item
+    height: auto
+    background: none !important
+    padding-bottom: 80px
+    .zag
+      font-size: 60px
+      padding-top: 30px
+    p
+      font-size: 18px
+  .zag
+    padding-bottom: 30px
+    font-size: 24px
+  .index-page-icons
+    .zag
+      font-size: 24px
+      padding-bottom: 30px
+    .item
+      margin-bottom: 30px
+  .index-page-items
+    &:after
+      display: none
+    padding: 30px 0
+    .name
+      font-size: 60px
+    p
+      margin-bottom: 0
+    .dark
+      color: #333
+      padding-top: 30px
+  .index-page-free
+    padding: 30px 0
+    .row .col-xs-6:nth-child(2n+1)
+      clear: both
+  .index-page-catalog
+    padding: 30px 0 0
+    .name
+      font-size: 40px
+    p
+      font-size: 20px
+    a
+      font-size: 16px
+    .btn
+      margin-top: 20px
+    .row
+      margin-bottom: 30px
+  .post-item img
+    margin-bottom: 15px
+  .footer
+    padding: 30px 0
+    .logo
+      float: none
+      p
+        margin-top: 20px
+      .social
+        padding-top: 20px
+    .bottom-menu
+      float: none
+      margin: 30px 0 0 0
+    .big-text
+      margin-bottom: 20px
+    .subscribe
+      float: none
+      width: auto
+      margin: 30px 0 0 0
+  .error-page
+    padding: 0
+    span
+      font-size: 50px
+      letter-spacing: 0
+    .btn
+      width: 100%
+      font-size: 24px
+  .page-content, .about-top-text
+    padding: 30px 0
+  h1, h2, h1.small
+    font-size: 30px
+    margin-bottom: 20px
+  .big-two-cols-text
+    font-size: 16px
+  .page-content .col-sm-6, .about-top-text .col-sm-6
+    margin-bottom: 20px
+  .buy-info .item
+    font-size: 16px
+  .product-top-info
+    padding: 30px 0
+    .name
+      font-size: 30px
+    p
+      font-size: 18px
+  .product-video .text
+    font-size: 16px
+  .scanner
+    padding: 30px 0
+    .zag
+      font-size: 30px
+    .item img
+      margin-bottom: 20px
+  .portative .text
+    .big-text
+      font-size: 30px
+    p
+      font-size: 16px
+  .hard-scanning
+    padding: 30px 0
+    .big-text
+      font-size: 30px
+    p
+      font-size: 16px
+  .yesy-use
+    padding: 30px 0
+    .zag
+      font-size: 30px
+  .about-top-text .zag
+    font-size: 30px
+  .modes
+    padding: 30px 0
+    .zag
+      font-size: 30px
+    .item img
+      margin-bottom: 20px
+  .test-markers
+    padding: 30px 0
+    .big-text
+      font-size: 30px
+    p
+      font-size: 16px
+  .tech-info
+    padding: 30px 0
+    .zag
+      font-size: 30px
+  .gallery-photo .gallery-item .slider-nav
+    padding-top: 10px
+    .item
+      margin: 0 5px
+  .gallery-3d .item iframe
+    height: 320px
+  .news-page
+    .image
+      font-size: 13px
+      img
+        max-width: 100%
+        width: 100%
+        margin: 0 0 6px 0
+    p
+      font-size: 16px
+      line-height: 26px
+  .index-page-icons .bottom-text
+    font-size: 16px
+    padding: 20px 0
+  .soft-info
+    padding: 30px 0
+    .big-text
+      font-size: 30px
+  .portative.big
+    padding: 0
+  .thor-icons
+    padding: 30px 0
+    .big-text
+      font-size: 30px
+    .list .item
+      float: none
+      width: auto
+    .bottom-text
+      font-size: 18px
+      padding: 20px 0
+  .thor-modes
+    padding: 30px 0
+    .big-text
+      font-size: 30px
+      margin-bottom: 30px
+    .row
+      margin-bottom: 30px
+  .dark-icons
+    padding: 30px 0
+    .item
+      font-size: 16px
+  .index-page-icons
+    padding: 30px 0
+    .zag p
+      font-size: 24px
+  .soft-info
+    &.big
+      .big-text
+        font-size: 30px
+      p
+        font-size: 18px
+        line-height: 28px
+    .row
+      margin-top: 30px
+  .tech-table
+    padding: 30px 0
+    .big-text
+      font-size: 30px
+    .table table tr td
+      font-size: 18px
+  .arts-list .item
+    padding: 30px 0 0
+    .big-text
+      font-size: 36px
+      margin-bottom: 20px
+  .index-posts
+    padding: 30px 0
+  .popupbg .popup
+    width: 300px
+    margin-left: -150px
+    .big-text
+      font-size: 16px
