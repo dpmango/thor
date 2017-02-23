@@ -62,11 +62,11 @@
 body, html {
 	width: 100%;
 	height: 100%;
+	overflow-x: hidden;
 }
 
 body {
 	background: #fff;
-	overflow-x: hidden;
 	&.dark {
 		background: #ebebeb;
 	}
@@ -130,11 +130,18 @@ section, header, footer, nav, main {
 	clear: both;
 }
 
+.container-fluid {
+	max-width: 1170px!important;
+	min-width: 320px!important;
+}
+
 .top-line {
 	background: #ebebeb;
-	height: 46px;
-	line-height: 46px;
 	text-align: right;
+	padding-bottom: 8px;
+	.btn-group {
+		margin-top: -7px;
+	}
 	button {
 		border: 0;
 		background: none;
@@ -143,6 +150,7 @@ section, header, footer, nav, main {
 	.social {
 		margin-right: 50px;
 		.in;
+		font-size: 28px;
 		img {
 			margin: 0 8px;
 		}
@@ -167,6 +175,14 @@ section, header, footer, nav, main {
 			li {
 				.in;
 				.rel;
+				&.last {
+					display: none;
+					a {
+						.in;
+						padding: 22px 0;
+						margin-right: 10px;
+					}
+				}
 				&:hover {
 					ul {
 						.bl;
@@ -262,11 +278,18 @@ section, header, footer, nav, main {
 	cursor: pointer;
 	background: @or;
 	font-weight: 300;
-	width: 202px;
-	height: 52px;
-	padding: 0;
-	line-height: 52px;
+	padding: 4px 20px 8px 20px;
 	border-radius: 0;
+	&:hover {
+		color: #fff;
+		box-shadow: rgba(1,1,1,.3) 3px 3px 9px;
+		background: #f6471f;
+	}
+}
+
+.dropdown-menu {
+	right: 0;
+	left: auto;
 }
 
 .index-page-icons {
@@ -325,7 +348,7 @@ section, header, footer, nav, main {
 		top: 0;
 		background: #323232;
 	}
-	.container {
+	.container-fluid {
 		.rel;
 		z-index: 2;
 	}
@@ -445,6 +468,9 @@ section, header, footer, nav, main {
 			padding-top: 50px;
 			img {
 				margin-right: 18px;
+				&:hover {
+					opacity: .7;
+				}
 			}
 			a {
 				&:last-child {
@@ -473,6 +499,9 @@ section, header, footer, nav, main {
 					font-size: 12px;
 					color: #fff;
 					.up;
+					&:hover {
+						color: @or;
+					}
 					&:before {
 						content: ">";
 						color: @or;
@@ -928,6 +957,9 @@ h2 {
 		padding: 20px 20px 20px 60px;
 		border: 1px solid #dddddd;
 		background: url('img/faq.png') no-repeat 20px 50%;
+		&:hover {
+			color: @or;
+		}
 		&.active {
 			background: url('img/faq-active.png') no-repeat 20px 50%;
 		}
@@ -973,6 +1005,12 @@ h2 {
 			width: 90%;
 			display: inline;
 		}
+		.slider-for {
+			img {
+				cursor:move;
+				cursor:grab;
+			}
+		}
 		.slider-nav, .slider-nav2, .slider-nav3, .slider-nav4 {
 			padding-top: 20px;
 			.item {
@@ -980,7 +1018,7 @@ h2 {
 				opacity: .7;
 				outline: none;
 				cursor: pointer;
-				&.slick-current {
+				&.slick-current, &:hover {
 					opacity: 1;
 				}
 			}
@@ -1317,7 +1355,7 @@ h2 {
 }
 
 @media (max-width: 991px) {
-	.header .top-menu ul li a {padding: 22px 7px; font-size: 13px; text-transform: none;}
+	.header .top-menu ul li a {padding: 24px 7px; font-size: 13px; text-transform: none;}
 	.index-page-catalog .image {text-align: center;}
 	.index-page-catalog .f_right {float: none;}
 	.index-page-catalog .f_left {float: none;}
@@ -1368,13 +1406,14 @@ h2 {
 	.index-page-catalog .btn {margin-top: 20px;}
 	.index-page-catalog .row {margin-bottom: 30px;}
 	.post-item img {margin-bottom: 15px;}
-	.footer {padding: 30px 0;}
+	.footer {padding: 15px 0; text-align: center;}
 	.footer .logo {float: none;}
 	.footer .logo p {margin-top: 20px;}
 	.footer .logo .social {padding-top: 20px;}
 	.footer .bottom-menu {float: none; margin: 30px 0 0 0;}
 	.footer .big-text {margin-bottom: 20px;}
 	.footer .subscribe {float: none; width: auto; margin: 30px 0 0 0;}
+	.footer .bottom-menu ul li {margin-bottom: 6px;}
 	.error-page {padding: 0;}
 	.error-page span {font-size: 50px; letter-spacing: 0;}
 	.error-page .btn {width: 100%; font-size: 24px;}
@@ -1440,4 +1479,10 @@ h2 {
 	.index-posts {padding: 30px 0;}
 	.popupbg .popup {width: 300px; margin-left: -150px;}
 	.popupbg .popup .big-text {font-size: 16px;}
+	.top-line {display: none;}
+	.index-page-icons .item img {margin-bottom: 10px; width: 100px;}
+	.news-item.arts img {display: block; margin: 0 auto;}
+	.footer .bottom-menu {display: none;}
+	.footer .subscribe {display: none;}
+	.header .top-menu ul li.last {display: block; padding: 10px 0 0 18px;}
 }
